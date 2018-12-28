@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    tools:context=".TicketActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp">
+        <TextView
+            android:id="@+id/ticket_mn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Movie"/>
+        <TextView
+            android:id="@+id/ticket_movie_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ticket_mn"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            tools:text="New Movie"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp">
+        <TextView
+            android:id="@+id/ticket_un"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"/>
+        <TextView
+            android:id="@+id/ticket_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ticket_un"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            tools:text="Bibek"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp">
+        <TextView
+            android:id="@+id/ticket_st"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Time"/>
+        <TextView
+            android:id="@+id/ticket_show_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ticket_st"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            tools:text="12:00"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp">
+        <TextView
+            android:id="@+id/ticket_p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Price (NRS):"/>
+        <TextView
+            android:id="@+id/ticket_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ticket_p"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            tools:text="100"/>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/ticket_print"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Print Ticket"/>
+
+</LinearLayout>
